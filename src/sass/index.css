@@ -110,6 +110,9 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 150px;
+  height: auto;
+  margin-left: 30px;
 }
 
 .tel-menu-open {
@@ -324,7 +327,7 @@ ul {
   height: 502px;
   padding-top: 194px;
   padding-bottom: 158px;
-  background-color: #ffb8ca;
+  background-color: rgba(255, 184, 202, 0.56);
   z-index: 5;
 }
 
@@ -356,9 +359,21 @@ ul {
   right: 0;
   background-image: url(../images/my/logo.png);
   background-repeat: no-repeat;
-  background-size: 346px 419px;
-  background-position: right -36px bottom;
   z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+  .hero::before {
+    background-size: 347px 300px;
+    background-position: right 124px bottom;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero::before {
+    background-size: 626px 569px;
+    background-position: right 118px bottom;
+  }
 }
 
 .hero__item {
@@ -451,7 +466,7 @@ ul {
 @media screen and (min-width: 768px) {
   .hero__title {
     font-weight: 400;
-    font-size: 22px;
+    font-size: 40px;
     line-height: 1.13;
     max-width: 162px;
   }
@@ -459,9 +474,10 @@ ul {
 
 @media screen and (min-width: 1280px) {
   .hero__title {
-    font-size: 38px;
-    line-height: 1.15;
     max-width: 277px;
+    font-size: 70px;
+    margin-left: 30px;
+    line-height: 1.15;
   }
 }
 
@@ -2254,6 +2270,24 @@ ul {
   }
 }
 
+.title_rewiews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Marck Script;
+  font-style: Regular;
+  font-size: 58px;
+  line-height: 72px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #D41443;
+}
+
 .slider__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3301,9 +3335,9 @@ ul {
 
 .tagline__text {
   margin-bottom: 16px;
-  font-family: 'Titan One';
+  font-family: 'Marck Script';
   font-weight: 400;
-  font-size: 30px;
+  font-size: 45px;
   line-height: 1.13;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -3318,8 +3352,8 @@ ul {
 }
 
 .tagline__text-secondary {
-  margin-bottom: 60px;
-  font-family: 'Titan One';
+  margin-bottom: 55px;
+  font-family: 'Marck Script';
   font-style: normal;
   font-weight: 400;
   font-size: 58px;
@@ -3484,7 +3518,6 @@ ul {
           transform: translate(-50%, -50%);
   z-index: 1000;
   background-color: #ffb8ca;
-  background-image: url(../images/desktop/milk-desktop-1x.png);
   border-radius: 24px;
 }
 
