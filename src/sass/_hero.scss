@@ -3,7 +3,7 @@
    height: 502px;
    padding-top: 194px;
    padding-bottom: 158px;
-   background-color: $bg-color;
+   background-color:rgba(255, 184, 202, 0.56);
    z-index: 5;
    @media screen and (min-width: 768px){
       height: 416px;
@@ -25,39 +25,20 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background-image: url(../images/mobile/hero-img-mobile-1x.png);
+    background-image: url(../images/my/logo.png);
     background-repeat: no-repeat;
-    background-size: 346px 419px;
-    background-position: right -36px bottom;
     z-index: -1;
-    
-    @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx){
-         background-image: url(../images/mobile/hero-img-mobile-2x.png);
-         background-size: 346px 419px;
-        }
-        @media screen and (min-width: 768px){
-      background-image:url(../images/tablet/hero-girl-tablet-1x.png), url(../images/tablet/hero-img-tablet-1x.png), url(../images/tablet/hero-milk-tablet-1x.png);
-      background-position: bottom right 32px, bottom right 185px, bottom 16px left 32px;
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx){
-         background-image: url(../images/tablet/hero-girl-tablet-2x.png), url(../images/tablet/hero-img-tablet-2x.png), url(../images/tablet/hero-milk-tablet-2x.png);
-        }
-        background-size: 190px 150px, 335px 373px, 152px 154px;   
-   }
-   @media screen and (min-width: 1280px){
-      background-image:url(../images/desktop/hero-girl-desktop-1x.png), url(../images/desktop/hero-img-desktop-1x.png), url(../images/desktop/hero-milk-desktop-1x.png); 
-      background-position: bottom right 16px, bottom right 229px, bottom 60px left 16px;
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx){
-         background-image: url(../images/desktop/hero-girl-desktop-2x.png), url(../images/desktop/hero-img-desktop-2x.png), url(../images/desktop/hero-milk-desktop-2x.png);
-        }
-        background-size: 304px 241px, 534px 611px, 213px 216px;   
-   }
+   @media screen and (min-width: 768px) {
+         background-size: 347px 300px;
+         background-position: right 124px bottom;
+      }
+   
+      @media screen and (min-width: 1280px) {
+         background-size: 626px 569px;
+         background-position: right 118px bottom;
+      }
     }
+
 &__item{
    display: flex;
    flex-direction: column;
@@ -102,25 +83,26 @@
    justify-content: space-between;
  }
  &__title {
-    font-family: 'Titan One';
-    font-weight: 900;
-    font-size: 26px;
+    font-family: 'Marck Script';
+    font-weight: 400;
+    font-size: 70px;
     line-height: 1.15;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: $secondary-color;
+    color: #D41443;
     max-width: 218px;
     margin-bottom: 20px;
     @media screen and (min-width: 768px){
       font-weight: 400;
-      font-size: 22px;
+      font-size: 40px;
       line-height: 1.13;
       max-width: 162px;
     }
     @media screen and (min-width: 1280px){
-      font-size: 38px;
-      line-height: 1.15;
-      max-width: 277px;
+         max-width: 277px;
+         font-size: 70px;
+         margin-left: 30px;
+         line-height: 1.15;
     }
     &--passion {
     font-family: 'Titan One';
